@@ -1,0 +1,1382 @@
+{
+	"info": {
+		"name": "tpwsrest",
+		"_postman_id": "af4a4832-d5ce-236d-0ec9-4d4ef2a24f7a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post book accept json",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/book?name=test&releaseDate=2017-10-09 15:00:39.019&isbn=x0001&author=toto&library.id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"book"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "releaseDate",
+							"value": "2017-10-09 15:00:39.019",
+							"equals": true
+						},
+						{
+							"key": "isbn",
+							"value": "x0001",
+							"equals": true
+						},
+						{
+							"key": "author",
+							"value": "toto",
+							"equals": true
+						},
+						{
+							"key": "library.id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Insert a new book in data base. Return the book in json format."
+			},
+			"response": []
+		},
+		{
+			"name": "post book accept xml",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/book?name=test&releaseDate=2017-10-09 15:00:39.019&isbn=x0001&author=toto&library.id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"book"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "releaseDate",
+							"value": "2017-10-09 15:00:39.019",
+							"equals": true
+						},
+						{
+							"key": "isbn",
+							"value": "x0001",
+							"equals": true
+						},
+						{
+							"key": "author",
+							"value": "toto",
+							"equals": true
+						},
+						{
+							"key": "library.id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Insert a new book in data base. Return the book in xml format."
+			},
+			"response": []
+		},
+		{
+			"name": "get book accept json",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/book?id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"book"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Select the book with id in param. Return the book in json Format."
+			},
+			"response": []
+		},
+		{
+			"name": "get book accept xml",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/book?id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"book"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Select the book with id in param. Return the book in json Format."
+			},
+			"response": []
+		},
+		{
+			"name": "delete book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/book?id=2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"book"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"equals": true
+						}
+					]
+				},
+				"description": "Delete the book with id in param. Retun string for confirm."
+			},
+			"response": []
+		},
+		{
+			"name": "put book accept xml",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/book?name=test&releaseDate=2017-10-09 15:00:39.019&isbn=x0001&author=toto&id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"book"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "releaseDate",
+							"value": "2017-10-09 15:00:39.019",
+							"equals": true
+						},
+						{
+							"key": "isbn",
+							"value": "x0001",
+							"equals": true
+						},
+						{
+							"key": "author",
+							"value": "toto",
+							"equals": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Update a book in data base. Return the book in xml Format."
+			},
+			"response": []
+		},
+		{
+			"name": "put book accept json",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/book?name=test&releaseDate=2017-10-09 15:00:39.019&isbn=x0001&author=toto&id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"book"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "releaseDate",
+							"value": "2017-10-09 15:00:39.019",
+							"equals": true
+						},
+						{
+							"key": "isbn",
+							"value": "x0001",
+							"equals": true
+						},
+						{
+							"key": "author",
+							"value": "toto",
+							"equals": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Update a book in data base. Return the book in json Format."
+			},
+			"response": []
+		},
+		{
+			"name": "get books accept xml",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/books",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"books"
+					]
+				},
+				"description": "Select a book collection in xml format."
+			},
+			"response": []
+		},
+		{
+			"name": "get books accept json",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/books",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"books"
+					]
+				},
+				"description": "Select a book collection in json format."
+			},
+			"response": []
+		},
+		{
+			"name": "post library accept json",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/library?name=test&address=test&yearCreated=1958",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"library"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "yearCreated",
+							"value": "1958",
+							"equals": true
+						}
+					]
+				},
+				"description": "Insert a new library in data base. Return te library in json format."
+			},
+			"response": []
+		},
+		{
+			"name": "post library accept xml",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/library?name=test&address=test&yearCreated=1958",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"library"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "yearCreated",
+							"value": "1958",
+							"equals": true
+						}
+					]
+				},
+				"description": "Insert a new library in data base. Return the library in xml format."
+			},
+			"response": []
+		},
+		{
+			"name": "get library accept json",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/library?id=2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"library"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"equals": true
+						}
+					]
+				},
+				"description": "Select the library with id in param. return the library in json format."
+			},
+			"response": []
+		},
+		{
+			"name": "get library accept xml",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/library?id=2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"library"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"equals": true
+						}
+					]
+				},
+				"description": "Select the library with id in param. return the library in xml format."
+			},
+			"response": []
+		},
+		{
+			"name": "delete library",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/library?id=2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"library"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"equals": true
+						}
+					]
+				},
+				"description": "delete the library with id in param. Return a string for comfirm."
+			},
+			"response": []
+		},
+		{
+			"name": "put library accept json",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/library?name=test&address=test&yearCreated=1958&id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"library"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "yearCreated",
+							"value": "1958",
+							"equals": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "uddate the library with id in param. return the library in json format."
+			},
+			"response": []
+		},
+		{
+			"name": "put library accept xml",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/library?name=test&address=test&yearCreated=1958&id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"library"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "yearCreated",
+							"value": "1958",
+							"equals": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "update the library with id in param. return the library in xml format."
+			},
+			"response": []
+		},
+		{
+			"name": "get libraries accept json",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/libraries",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"libraries"
+					]
+				},
+				"description": "Select a library collection in json format."
+			},
+			"response": []
+		},
+		{
+			"name": "get libraries accept xml",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/libraries",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"libraries"
+					]
+				},
+				"description": "Select a library collection in xml format."
+			},
+			"response": []
+		},
+		{
+			"name": "post bilbio/id/book accept json",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/biblio/1/book?name=test&releaseDate=2017-10-09 15:00:39.019&isbn=x0001&author=toto",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"book"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "releaseDate",
+							"value": "2017-10-09 15:00:39.019",
+							"equals": true
+						},
+						{
+							"key": "isbn",
+							"value": "x0001",
+							"equals": true
+						},
+						{
+							"key": "author",
+							"value": "toto",
+							"equals": true
+						}
+					]
+				},
+				"description": "Insert a new book for the library with id param in data base. Return the book in json format."
+			},
+			"response": []
+		},
+		{
+			"name": "post bilbio/id/book accept xml",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/biblio/1/book?name=test&releaseDate=2017-10-09 15:00:39.019&isbn=x0001&author=toto",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"book"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "releaseDate",
+							"value": "2017-10-09 15:00:39.019",
+							"equals": true
+						},
+						{
+							"key": "isbn",
+							"value": "x0001",
+							"equals": true
+						},
+						{
+							"key": "author",
+							"value": "toto",
+							"equals": true
+						}
+					]
+				},
+				"description": "Insert a new book for the library with id param in data base. Return the book in xml format."
+			},
+			"response": []
+		},
+		{
+			"name": "get bilbio/1/book accept json",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/biblio/1/book?book.id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"book"
+					],
+					"query": [
+						{
+							"key": "book.id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get the book with book.id param in the libray with id param. Return tthe book in json format."
+			},
+			"response": []
+		},
+		{
+			"name": "get bilbio/1/book accept xml",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/biblio/1/book?book.id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"book"
+					],
+					"query": [
+						{
+							"key": "book.id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get the book with book.id param in the libray with id param. Return tthe book in xml format."
+			},
+			"response": []
+		},
+		{
+			"name": "delete biblio/id/book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/biblio/1/book?book.id=3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"book"
+					],
+					"query": [
+						{
+							"key": "book.id",
+							"value": "3",
+							"equals": true
+						}
+					]
+				},
+				"description": "Delete the book with book.id in the library with id param. Return a string for confirm."
+			},
+			"response": []
+		},
+		{
+			"name": "put biblio/id/book accept xml",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/biblio/1/book?name=test&releaseDate=2017-10-09 15:00:39.019&isbn=x0001&author=toto&book.id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"book"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "releaseDate",
+							"value": "2017-10-09 15:00:39.019",
+							"equals": true
+						},
+						{
+							"key": "isbn",
+							"value": "x0001",
+							"equals": true
+						},
+						{
+							"key": "author",
+							"value": "toto",
+							"equals": true
+						},
+						{
+							"key": "book.id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Update the book with book.id param in the library with id param. Return the book in xml format."
+			},
+			"response": []
+		},
+		{
+			"name": "put biblio/id/book accept json",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8081/tpwsrest/biblio/1/book?name=test&releaseDate=2017-10-09 15:00:39.019&isbn=x0001&author=toto&book.id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"book"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test",
+							"equals": true
+						},
+						{
+							"key": "releaseDate",
+							"value": "2017-10-09 15:00:39.019",
+							"equals": true
+						},
+						{
+							"key": "isbn",
+							"value": "x0001",
+							"equals": true
+						},
+						{
+							"key": "author",
+							"value": "toto",
+							"equals": true
+						},
+						{
+							"key": "book.id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Update the book with book.id param in the library with id param. Return the book in json format."
+			},
+			"response": []
+		},
+		{
+			"name": "get biblio/1/books json",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/biblio/1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"books"
+					]
+				},
+				"description": "Select book collection in the library with id param. Return the collection in json format."
+			},
+			"response": []
+		},
+		{
+			"name": "get biblio/1/books xml",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/biblio/1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"books"
+					]
+				},
+				"description": "Select book collection in the library with id param. Return the collection in xml format."
+			},
+			"response": []
+		},
+		{
+			"name": "Error type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/biblio/1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"books"
+					]
+				},
+				"description": "Retrun status 400 for other type than xml or json in header accept. -> Methods get, post, put for url biblio/id/book, bibilio.id/books, book, books, library and libraries."
+			},
+			"response": []
+		},
+		{
+			"name": "Error no collection book for null library",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/biblio/4/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"4",
+						"books"
+					]
+				},
+				"description": "Return status 400. Method GET url biblio/id/books"
+			},
+			"response": []
+		},
+		{
+			"name": "Error can't udpate, delete, create or get book on null library",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/biblio/4/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"4",
+						"book"
+					]
+				},
+				"description": "Return status 400. Methods GET, PUT, DELETE, POST url bilbio/id/book"
+			},
+			"response": []
+		},
+		{
+			"name": "Error Book is not existent in library",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/biblio/1/book/?book.id=82",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"biblio",
+						"1",
+						"book",
+						""
+					],
+					"query": [
+						{
+							"key": "book.id",
+							"value": "82",
+							"equals": true
+						}
+					]
+				},
+				"description": "Return status 400. Methods GET, UPDATE, DELETE url biblio/id/book"
+			},
+			"response": []
+		},
+		{
+			"name": "Error status 405",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"books"
+					]
+				},
+				"description": "No methods for url book, books, library, libraries, biblio/id/books, biblio/id/book"
+			},
+			"response": []
+		},
+		{
+			"name": "Error Cannot return, delete, update a non existent library",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/library?id=84",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"library"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "84",
+							"equals": true
+						}
+					]
+				},
+				"description": "Return status 400. Methods GET, DELETE, PUT url library"
+			},
+			"response": []
+		},
+		{
+			"name": "Error Cannot return, delete, update a non existent book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/book?id=84",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"book"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "84",
+							"equals": true
+						}
+					]
+				},
+				"description": "Return status 400. Methods GET, DELETE, PUT url book"
+			},
+			"response": []
+		},
+		{
+			"name": "Error Cannot attach a book to a non existent library ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/book?library.id=84",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"book"
+					],
+					"query": [
+						{
+							"key": "library.id",
+							"value": "84",
+							"equals": true
+						}
+					]
+				},
+				"description": "Return status 400. Method POST url book"
+			},
+			"response": []
+		},
+		{
+			"name": "Eror status 400",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/tpwsrest/book?library.id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tpwsrest",
+						"book"
+					],
+					"query": [
+						{
+							"key": "library.id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Less informations for Methods POST UPDATE url book, library, bilbio/id/book"
+			},
+			"response": []
+		}
+	]
+}

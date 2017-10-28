@@ -1,0 +1,50 @@
+<RestClientRequest>
+  <option name="biscuits">
+    <list />
+  </option>
+  <option name="httpMethod" value="POST" />
+  <option name="urlBase" value="http://localhost:8081" />
+  <option name="urlPath" value="tpwsrest/api/book" />
+  <option name="headers">
+    <list>
+      <KeyValuePair>
+        <option name="key" value="Accept" />
+        <option name="value" value="*/*" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Cache-Control" />
+        <option name="value" value="no-cache" />
+      </KeyValuePair>
+    </list>
+  </option>
+  <option name="parameters">
+    <list>
+      <KeyValuePair>
+        <option name="key" value="name" />
+        <option name="value" value="test" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="releaseDate" />
+        <option name="value" value="2017-10-09 15:00:39.019" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="isbn" />
+        <option name="value" value="x0001" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="author" />
+        <option name="value" value="toto" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="library.id" />
+        <option name="value" value="1" />
+      </KeyValuePair>
+    </list>
+  </option>
+  <option name="parametersEnabled" value="true" />
+  <option name="haveTextToSend" value="false" />
+  <option name="haveFileToSend" value="false" />
+  <option name="isFileUpload" value="false" />
+  <option name="textToSend" value="" />
+  <option name="filesToSend" value="" />
+</RestClientRequest>
